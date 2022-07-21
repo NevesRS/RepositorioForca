@@ -14,7 +14,13 @@ class Forca {
         if (this.acertos.includes(letra)) return letra;
         else return "_";
       })
-      .join("");
+      .join(" ' ");
+  }
+
+  getTeste(){
+    if(1 == 1){
+      console.log("Entrei")
+    }
   }
 
   chutar(letras) {
@@ -61,7 +67,7 @@ class Forca {
       letrasChutadas: this.letrasChutadas, // Deve conter todas as letras chutadas
       vidas: this.vidas, // Quantidade de vidas restantes
       acertos: this.acertos, // Deve ser um array com as letras que já foram acertadas ou o valor "_" para as letras não identificadas
-      //palavra: this.palavra.split("") // --- Validação necessitava de uma variável splitada.
+      palavra: this.palavra.split("") // --- Validação necessitava de uma variável splitada.
     };
   }
 }
